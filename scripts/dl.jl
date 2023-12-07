@@ -18,7 +18,39 @@ books = Dict([
     ("1 Sam", "samuel1"),
     ("2 Sam", "samuel2"),
     ("1 Kings", "kings1"),
-    ("2 Kings", "kings2")
+    ("2 Kings", "kings2"),
+    ("Isa", "isaiah"),
+    ("Jer", "jeremiah"),
+    ("Ezek", "ezekiel"),
+
+    ("Hos", "hosea"),
+    ("Joel", "joel"),
+    ("Am", "amos"),
+    ("Ob", "obadiah"),
+    ("Jon", "jonah"),
+    ("Mic", "micah"),
+    ("Nah", "nahum"),
+    ("Hab", "habakkuk"),
+    ("Zeph", "zephaniah"),
+    ("Hag", "haggai"),
+    ("Zech", "zechariah"),
+    ("Mal", "malachi"),
+
+    ("Ps", "psalms"),
+    ("Prov", "proverbs"),
+    ("Job", "job"),
+    ("Song", "songs"),
+    ("Ruth", "ruth"),
+    ("Lam", "lamentations"),
+    ("Eccl", "ecclesiastes"),
+    ("Esth", "esther"),
+    ("Dan", "daniel"),
+    ("Ezra", "ezra"),
+    ("Neh", "nehemiah"),
+    ("1 Chr", "chronicles2"),
+    ("2 Chr", "chronicles2")
+
+
     ]
 )
 
