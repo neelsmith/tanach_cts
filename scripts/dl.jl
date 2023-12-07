@@ -7,12 +7,25 @@ baseurl = "https://tanach.us/Server.txt?"
 
 # Keys of tanach.us file names to local file name to use
 books = Dict([
-    ("Deut","deuteronomy")
+    ("Gen", "genesis"),
+    ("Ex", "exodus"),
+    ("Lev", "leviticus"),
+    ("Num", "numbers"),
+    ("Deut", "deuteronomy"),
+    ("Josh", "joshua"),
+    ("Judg", "judges"),
+    ("1 Sam", "samuel1")#=,
+    ("2 Sam", "samuel2"),
+    ("1 Kings", "kings1")
+    ("2 Kings", "kings2")=#
     ]
 )
 
+bklist = keys(books) |> collect
 
-for b in keys(books)
+@info("Looking for $(length(bklist)) books:")
+for b in bklist #keys(books)
+    @info("=> Look for key $(b)")
     url = string(baseurl, b, "*")
     dlfile = Downloads.download(url)
     @info("Downloaded $(url)")
