@@ -1,5 +1,6 @@
 #=
-
+Read .txt files in tanach.us format from srcdir, convert to CEX, and
+write to outdir.
 =#
 
 # Metadata characters we'll refer to by name:
@@ -40,7 +41,8 @@ end
 srcdir = joinpath(pwd(), "textsrc")
 cexdir = joinpath(pwd(), "cex")
 
-txtlist = ["deuteronomy"]
+txtfiles = filter(f -> endswith(f, ".txt"), readdir(srcdir))
+txtlist = map(fname -> replace(fname, ".txt" => ""), txtfiles)
 
 for txt in txtlist
     srcfile = joinpath(srcdir, "$(txt).txt")
